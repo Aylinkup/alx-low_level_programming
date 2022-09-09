@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - This program prints 'Program is positive, negative, or zero' where neccessary.
+ * main - prints 'Program is positive, negative, or zero' where.
  * 
  * Return: 0
  */
