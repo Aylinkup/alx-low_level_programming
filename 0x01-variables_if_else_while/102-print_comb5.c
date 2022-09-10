@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
@@ -7,45 +5,39 @@
  *
  * Return: 0
  */
+
 int main(void)
 {
-	int i, j, k, l;
+	int tho;
+	int hun;
+	int ten;
+	int bas;
 
-	i = j = k = 48; l = 49;
-	while  ((i < 58))
+for ( tho = 0 ; tho < 10 ; tho++)
+{	
+
+	for (hun = 0 ; hun <= 10 ; hun++)
 	{
-		putchar(i); putchar(j); putchar(32); putchar(k); putchar(l);
-		if ((i == 57) && (j == 56) && (k == 57) && (l == 57))
+	
+		for (ten = 0 ; ten < 10 ; ten++)
 		{
-			putchar('\n'); i++;
-		}
-		else
-		{
-			putchar(44); putchar(32);
-			if ((k == 57) && (l == 57))
+			for ( bas = 0 ; bas < 10 ; bas++)
 			{
-				if (j < 56)
+				putchar('0' + tho);
+				putchar('0' + hun);
+				putchar(32);
+				putchar('0' + ten);
+				putchar('0' + bas);
+				if (!(tho == 9 && hun == 8))
 				{
-					l = ++j + 1; k = i;
+					putchar(',');
+					putchar(32);
 				}
-				else if (j == 56)
-				{
-					j++; k = i + 1; l = 48;
-				}
-				else if (j == 57)
-				{
-					j = 48; l = 49; k = ++i;
-				}
-			}
-			else if (l < 57)
-			{
-				l++;
-			}
-			else
-			{
-				l = 48; k++;
+				bas++;
 			}
 		}
 	}
+}
+	putchar('\n');
 	return (0);
 }
