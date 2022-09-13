@@ -1,24 +1,21 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * main - function that prints my name
- *
- * Description: Prints Ayotunde with _putchar
- *
+ * main - prints _putchar, followed by new line
  * Return: 0
  */
 
 int main(void)
 {
-	int i = 0;
-	char c;
-	char s[] = "Ayotunde\n";
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-	while (i <= 9)
-	{
-		c = s[i];
-		_putchar(c);
-		i++;
-	}
 	return (0);
 }
