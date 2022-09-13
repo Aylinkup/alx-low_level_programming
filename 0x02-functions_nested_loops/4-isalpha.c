@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * _isalpha - checks the code for Holberton School students.
- * 
- * Return: 0
+ * Checks for alphabet charcters
+ *
+ * @c: The character in ASCII code
+ *
+ * Return: 1 for letters. Returns 0 otherwise
  */
 int _isalpha(int c)
 {
