@@ -1,20 +1,24 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
-* main - Print the word "_putchar" followed by a new line
-*
-* Return: 0
-*/
+ * main - entry point
+ *
+ * Description: Prints _putchar followed by a new line
+ *
+ * Return: 0
+ */
 
 int main(void)
 {
-	int i;
-	char p[] = "_putchar";
+	int i = 0;
+	char c;
+	char s[] = "_putchar\n";
 
-	for (i = 0; i < 9; i++)
-		{
-		_putchar(p[i]);
-		}
-		_putchar('\n');
+	while (i <= 9)
+	{
+		c = s[i];
+		_putchar(c);
+		i++;
+	}
 	return (0);
 }
