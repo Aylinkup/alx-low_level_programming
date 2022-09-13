@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * Checks for alphabet charcters
+ * Description: checks for alphabetic character
  *
  * @c: The character in ASCII code
  *
