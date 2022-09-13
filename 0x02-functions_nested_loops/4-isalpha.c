@@ -1,11 +1,8 @@
 #include "main.h"
-
 /**
- * Description: checks for alphabetic character
- *
- * @c: The character in ASCII code
- *
- * Return: 1 for letters. Returns 0 otherwise
+ *_isalpha - function to check if c is a letter, lower or uppercase
+ *@c: is the int that will use for the argument of the function
+ * Return: 0
  */
 int _isalpha(int c)
 {
