@@ -8,21 +8,21 @@
  */
 int main(void)
 {
-	long int a, b, c, d;
+	int counter;
+	int countto = 50;
+	long a = 1;
+	long b = 2;
 
-	a = 1;
-	b = 2;
-	c = 3;
-
-	printf("%ld, ", a);
-	printf("%ld, ", b);
-	for (d = 3; d < 50; d++)
+	for (counter = 1; counter <= (countto / 2); counter++)
 	{
-		printf("%ld, ", c);
-		a = b;
-		b = c;
-		c = a + b;
+		printf("%li %li ", a, b);
+		a += b;
+		b += a;
 	}
-	printf("%ld\n", c);
+	if (countto % 2 == 1)
+		printf("%li", a);
+
+	printf("\n");
+
 	return (0);
 }
