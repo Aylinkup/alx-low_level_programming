@@ -106,6 +106,6 @@ void print_times_table(int n);
  * Return: 0
  */
 
-int main(void)
+int main(void);
 	
 #endif
