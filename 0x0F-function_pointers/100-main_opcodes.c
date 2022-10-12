@@ -1,35 +1,37 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 /**
- * main - prints opcode of own main function
- *
- * @argc: argument count
- * @argv: arg value
- * Return: int
- */
+ * main- Entry point
+(* a blank line
+ *@argc: the number of parameters.
+ *@argv: the parameeters in the case the number ob bytes.
+* Description: this program prints opcodes in hexa)?
+* Return: 0 in succes
+*/
 int main(int argc, char *argv[])
 {
-	int x, i;
-	unsigned char *p;
+	int i, n;
+
 
 	if (argc != 2)
 	{
 		printf("Error\n");
-		exit(1);
+		return (1);
 	}
-	x = atoi(argv[1]);
-	if (x < 0)
+	n = atoi(argv[1]);
+	if (n < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	p = (unsigned char *)main;
-	i = 0;
-	if (x > 0)
+
+	for (i = 0; i < n; i++)
 	{
-		while (i < (x - 1))
-			printf("%02hhx ", p[i++]);
-		printf("%hhx\n", p[i]);
+		printf("%02hhx", *((char *)main + i));
+		if (i < n - 1)
+			printf(" ");
+		else
+			printf("\n");
 	}
 	return (0);
 }
